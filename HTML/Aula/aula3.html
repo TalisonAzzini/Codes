@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Exemplos feito durante a aula 3.">
+    <meta name="author" content="Talison Rodrigues">
+    <title>Aula 3</title>
+</head>
+
+<body>
+    <h1 id="topo">Trabalhando com imagens, links e formulários</h1>
+    <hr>
+
+    <figure>
+        <img src="steam.png" alt="Logo da steam" width="40%" height="40%">
+    </figure>
+
+    <form id="frmJogos"> <!-- action(url para enviar as inf) e method(metodo de envio get ou post) -->
+        <fieldset>
+            <legend>Registro de jogos</legend>
+            <div class="campo">
+                <label>Nome do jogo: </label>
+                <input required type="text" style="width: 20em" id="txtNomeJogo">
+                <label class="checkbox">
+                    <input type="radio" name="tipo" value="singleplayer">Singleplayer
+                </label>
+                <label class="checkbox">
+                    <input type="radio" name="tipo" value="multiplayer">Multiplayer
+                </label>
+            </div><br>
+
+            <div class="campo">
+                <label>Estúdio: </label>
+                <input required type="text" id="txtEstudio">
+            </div><br>
+
+            <div>
+                <label>Data de lançamento: </label>
+                <input required type="date" id="txtDataLancamento">
+            </div><br>
+
+            <div>
+                <label>Categoria: </label>
+                <input required type="text" id="txtCategoria">
+            </div><br>
+
+            <button>Salvar</button>
+        </fieldset>
+    </form>
+
+
+    <h3><a href="#topo">Inicio</a> <a href="index.html">Voltar</a></h3>
+</body>
+
+</html>
